@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +21,10 @@ namespace ProblemTwo_CompilationError
         }
         public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
         {
-
+            this.EmpID = eID;
+            this.EmpName = eName;
+            this.EmpLevel = eLevel;
+            this.DateOfJoining = eDoJ;
         }
 
         public static int GetMonthDifference(DateTime startDate, DateTime endDate)
